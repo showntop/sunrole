@@ -1,4 +1,4 @@
 .DS_Store
-tmp
+tmp/
 log/*.log
 public/phantomjs-1.9.8-macosx.zip
