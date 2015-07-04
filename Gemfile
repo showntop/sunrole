@@ -2,6 +2,7 @@ source 'https://ruby.taobao.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails-api'
 gem 'rails', '4.2.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -49,3 +50,5 @@ group :development, :test do
 end
 
 gem 'acts_as_tree'
+
+gem 'angularjs-rails', '~> 1.4.0'

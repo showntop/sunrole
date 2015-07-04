@@ -4,7 +4,10 @@ class User::SessionController < ApplicationController
   omit_the_guard
 
   def new
-
+    respond_to do |format|
+      format.json { render json: {content: 'success'} }
+      format.html { redirect_to '/'}
+    end
   end
 
   def create
