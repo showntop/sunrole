@@ -9,7 +9,6 @@ module AuthSystem
     #puts "user::#{user.to_yaml}"
     return if user.blank?
     session[:current_user_id] = user.id
-    puts "AuthSystem::signin_user#{session}"
     #cookies
     #request.env
   end
@@ -22,7 +21,6 @@ module AuthSystem
   end
 
   def login_form_session
-    puts "AuthSystem::login_form_session::#{session[:current_user_id]}"
     return nil if session[:current_user_id].blank?
     User.find(session[:current_user_id])
   end

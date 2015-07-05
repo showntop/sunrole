@@ -4,7 +4,6 @@ require 'guardian'
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-
   include AuthSystem
 
   include Guardian::ControllerExtensions
@@ -14,8 +13,6 @@ class ApplicationController < ActionController::Base
   invoke_the_guard
 
   def login_required
-    puts "login_required::current_user::#{current_user}"
-    puts "login_required::session::#{session}"
     return if current_user
 
     # save original URL in a cookie

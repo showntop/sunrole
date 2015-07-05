@@ -3,7 +3,6 @@ require 'utils'
 class User < ActiveRecord::Base
 
   #include Guardian::Subjectable
-
   #invoke_subjectable_engine
   before_save :ensure_password_is_encrypted
 

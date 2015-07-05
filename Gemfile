@@ -3,6 +3,7 @@ source 'https://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #gem 'rails-api'
+gem 'rails-api'
 gem 'rails', '4.2.2'
 # Use postgresql as the database for Active Record
 gem 'pg'

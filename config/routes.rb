@@ -8,7 +8,6 @@ Sunlight::Application.routes.draw do
 
   resources :archieves
 
-
   root :to => "home#index"
 
   namespace :user do
