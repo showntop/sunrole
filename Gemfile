@@ -2,9 +2,8 @@ source 'https://ruby.taobao.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-#gem 'rails-api'
-gem 'rails-api'
 gem 'rails', '4.2.2'
+gem 'rails-api'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
