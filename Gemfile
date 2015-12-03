@@ -51,4 +51,5 @@ end
 
 gem 'acts_as_tree'
 
-gem 'angularjs-rails', '~> 1.4.0'
+#gem 'angularjs-rails', '~> 1.4.0'
+gem 'active_model_serializers', "~> 0.8.0"

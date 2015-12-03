@@ -12,7 +12,7 @@ class Api::SessionsController < ApplicationController
       render json: {code: -1, message: I18n.t("login.incorrect_username_email_or_password")} and return unless u.password_right? password
       signin_user u
       
-      format.json { render json: {code: 1, message: 'success'} }
+      render json: {code: 1, message: 'success', data: UserSerializer.new(u, root: false) }
     else
       render json: {code: -1, message: I18n.t("login.incorrect_username_email_or_password")}
     end
