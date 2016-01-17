@@ -38,7 +38,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    acts_as_tree (2.2.0)
+    acts_as_tree (2.3.0)
       activerecord (>= 3.0.0)
     arel (6.0.3)
     binding_of_caller (0.7.2)
@@ -144,7 +144,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.8.0)
-  acts_as_tree
+  acts_as_tree (~> 2.3)
   byebug
   factory_girl
   factory_girl_rails

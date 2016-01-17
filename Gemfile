@@ -10,7 +10,7 @@ gem 'pg'
 
 gem 'active_model_serializers', "~> 0.8.0"
 
-gem 'acts_as_tree'
+gem 'acts_as_tree', '~> 2.3'
 
 gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 

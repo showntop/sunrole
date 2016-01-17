@@ -34,4 +34,17 @@ class User < ActiveRecord::Base
     Utils::Password.encrypt(raw_password, salt)
   end
 
+  def grant role
+    role_id = role.class == Role ? role.id : role
+    UserRole.create(user: self, role_id: role_id)
+  end
+
+  def grant_batch! roles_or_role_ids
+    user_roles = roles_or_role_ids.map { |role| 
+                  role.class == Role ? 
+                      {user: self, role_id: role.id} : 
+                      {user: self, role_id: role} }
+    UserRole.create!(user_roles)
+  end
+
 end
